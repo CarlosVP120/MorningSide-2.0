@@ -15,10 +15,9 @@ const Hero = () => {
       >
         <div className="">
           <div className="hero-title font-['SpaceGrotesk'] text-5xl font-bold text-main-color md:text-7xl ">
-            <h1>Morningside</h1>
-            <h1>AI</h1>
+            <h1>Apeiron AI</h1>
           </div>
-          <p className="mt-[24px] w-2/3 max-w-[380px] font-['Inter'] text-base md:text-lg font-semibold md:font-normal text-main-color">
+          <p className="mt-[24px] w-2/3 max-w-[380px] font-['Inter'] text-base font-semibold text-main-color md:text-lg md:font-normal">
             Empower Your Business with Cutting-Edge AI Solutions
           </p>
           <div className="flex gap-x-3 pt-5  font-['Inter']">
