@@ -8,7 +8,7 @@ const Header = () => {
             <a href="/">
               <img
                 src="/images/Logo/l.png"
-                className="h-[60px] w-[60px]"
+                className="h-[50px] w-[50px]"
                 alt="logo"
               />
             </a>

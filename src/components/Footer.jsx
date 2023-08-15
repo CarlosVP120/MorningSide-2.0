@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="grid grid-cols-4 pb-8">
           <div className="col-span-4 flex items-center">
             <img
-              className="my-5 h-[60px] w-[200px] "
-              src="/images/Logo/logo.png"
+              className="my-5 h-[60px] w-[60px] "
+              src="/images/Logo/l.png"
               alt="logo"
             />
           </div>
@@ -36,13 +36,15 @@ const Footer = () => {
             <div className="flex md:w-1/2 ">
               <div className="flex flex-col ">
                 <div className="my-2 font-semibold">Address</div>
-                <div className="font-normal text-[#6B7280]">Dubai, UAE</div>
+                <div className="font-normal text-[#6B7280]">
+                  Guadalajara, MEX
+                </div>
               </div>
             </div>
             <div className="md:w-1/2">
               <p className="my-2 font-semibold">Contact</p>
               <p className="font-normal text-[#6B7280]">
-                Email:josh@morningside.ai
+                Email:carlosveryan@apeiron-ai
               </p>
             </div>
           </div>
@@ -50,7 +52,7 @@ const Footer = () => {
         <hr className="col-span-2"></hr>
         <div className="grid grid-cols-2 items-center justify-between gap-y-3 py-8 text-sm">
           <div className="col-span-2 text-[#4D5761] md:col-span-1">
-            ©Morningside AI
+            ©Apeiron AI
           </div>
           <div className="col-span-2 flex flex-row justify-end gap-x-6 text-main-color md:col-span-1">
             <div>Privacy Policy</div>

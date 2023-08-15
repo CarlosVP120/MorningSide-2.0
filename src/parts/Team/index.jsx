@@ -10,7 +10,7 @@ const Team = () => {
           <div>Meet The Team</div>
         </div>
       </div>
-      <div className="w-full grid grid-cols-3 items-center justify-between gap-x-24 gap-y-24">
+      <div className="grid w-3/4 grid-cols-2 items-center justify-between gap-x-24 gap-y-24">
         {team.map((member, index) => (
           <MemberCard
             key={index}

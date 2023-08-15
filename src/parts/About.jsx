@@ -36,13 +36,13 @@ const About = () => {
   }, []);
 
   return (
-    <div className="py-10 flex items-center justify-center bg-[#090A11]">
+    <div className="flex items-center justify-center bg-[#090A11] py-10">
       <div className="mx-auto">
-        <div className="text-xl md:text-[40px] text-white font-bold py-8">
-          <article className="text-center space-y-3 md:space-y-10">
+        <div className="py-8 text-xl font-bold text-white md:text-[40px]">
+          <article className="space-y-3 text-center md:space-y-10">
             <div className="">
               <span className="square ">leverage </span>
-              <span className="square ">morningside's </span>
+              <span className="square ">apeiron's </span>
             </div>
             <div className=" ">
               <span className="square ">comprehensive </span>
