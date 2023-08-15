@@ -19,17 +19,17 @@ const ContactForm = () => {
       budget: formData.get("budget"),
     };
 
-    emailjs.send(
-      "service_0thoncg",
-      "template_2pde5tf",
-      data,
-      "N00Fs9C1hV_wWVj-x"
-    );
+    // emailjs.send(
+    //   "service_0thoncg",
+    //   "template_2pde5tf",
+    //   data,
+    //   "N00Fs9C1hV_wWVj-x"
+    // );
 
     emailjs
       .send(
         "service_0thoncg",
-        "template_wsj7vpd",
+        "template_2pde5tf",
         {
           ...data,
           // sent: a ? "Sent to them" : "Just me",
