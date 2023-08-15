@@ -20,21 +20,21 @@ const ContactForm = () => {
     };
 
     emailjs.send(
-      "service_839tvkd",
-      "template_upd8p7b",
+      "service_0thoncg",
+      "template_2pde5tf",
       data,
-      "WpcdHKXte2Drc_Q_u"
+      "N00Fs9C1hV_wWVj-x"
     );
 
     emailjs
       .send(
-        "service_839tvkd",
+        "service_0thoncg",
         "template_wsj7vpd",
         {
           ...data,
           // sent: a ? "Sent to them" : "Just me",
         },
-        "WpcdHKXte2Drc_Q_u"
+        "N00Fs9C1hV_wWVj-x"
       )
       .then(
         (result) => {
