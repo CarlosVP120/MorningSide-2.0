@@ -13,11 +13,9 @@ const Footer = () => {
           </div>
           <div className="col-span-4 pb-6 md:col-span-2">
             <div className="flex max-w-[460px] flex-col ">
-              <h3 className="pb-6 text-base font-semibold">
-                Join our newsletter
-              </h3>
+              <h3 className="pb-6 text-base font-semibold">Contact Us</h3>
               <div className="flex flex-row gap-x-3 pb-6">
-                <a href="https://morningsideai.beehiiv.com/?_gl=1*aq9b2c*_ga*MTk5NDAyNDI3MS4xNjc5MDM1ODk5*_ga_E6Y4WLQ2EC*MTY4MTk3MTc0Ni4xMy4xLjE2ODE5NzE4NDcuMzAuMC4w">
+                <a href="https://calendly.com/apeiron_ai/15min?month=2023-08">
                   <input
                     type="button"
                     className="btn orange-btn border-btn"
