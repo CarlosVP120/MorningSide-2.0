@@ -2,19 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
   scroll-behavior: smooth;
 }
 
 @font-face {
-  font-family: 'SpaceGrotesk';
-  src: local('SpaceGrotesk'), url('../public/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-family: "SpaceGrotesk";
+  src: local("SpaceGrotesk"),
+    url("../public/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: local('Inter'), url('../public/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-family: "Inter";
+  src: local("Inter"),
+    url("../public/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
 }
 
 @layer utilities {
@@ -22,17 +23,17 @@ html {
     white-space: nowrap;
   }
   .title {
-    @apply text-lg md:text-2xl text-orange-color font-bold text-center uppercase mb-6
+    @apply mb-6 text-center text-lg font-bold uppercase text-orange-color md:text-2xl;
   }
 
   .btn {
-    @apply font-medium px-4 py-1.5 md:px-8 md:py-3 text-sm md:text-base;
+    @apply px-4 py-1.5 text-sm font-medium md:px-8 md:py-3 md:text-base;
     cursor: pointer;
     border-radius: 8px;
   }
 
   .email-input {
-    border: 1px solid #1A1A1A;
+    border: 1px solid #1a1a1a;
     box-shadow: 0px 1px 2px rgba(17, 24, 39, 0.05);
     border-radius: 8px;
   }
@@ -42,52 +43,63 @@ html {
   }
   .orange-btn {
     @apply bg-orange-color text-white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .orange-btn:hover {
+    @apply bg-black;
   }
 
   .normal-btn {
-    @apply bg-white text-main-color border-main-color ;
+    @apply border-main-color bg-white text-main-color;
+    transition: all 0.3s ease-in-out;
   }
 
-	.container {
-		width: 100%;
-		height: 100%;
-		padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
+  .normal-btn:hover {
+    @apply bg-main-color text-white;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
-	}
+  }
 
   .line-h {
     line-height: 35px;
   }
 
   .divider {
-    @apply border border-solid border-gray-400 my-2;
+    @apply my-2 border border-solid border-gray-400;
   }
 
-	.card {
-    border: 1px solid #D2D6DB;
-    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1), 0px 1px 4px -2px rgba(0, 0, 0, 0.06);
+  .card {
+    border: 1px solid #d2d6db;
+    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1),
+      0px 1px 4px -2px rgba(0, 0, 0, 0.06);
     border-radius: 16px;
-	}
+  }
   .service-card {
-    @apply font-['SpaceGrotesk'] font-bold text-2xl mx-auto mb-4
-   }
+    @apply mx-auto mb-4 font-['SpaceGrotesk'] text-2xl font-bold;
+  }
   .service-card-item {
-    @apply font-['Inter'] text-base text-[#4D5761]
+    @apply font-['Inter'] text-base text-[#4D5761];
   }
 
-	.hero {
-		@apply bg-cover;
+  .hero {
+    @apply bg-cover;
     z-index: 1;
-	}
-	.hero::before {
-		@apply absolute top-0 left-0 w-full h-full bg-no-repeat;
+  }
+  .hero::before {
+    @apply absolute left-0 top-0 h-full w-full bg-no-repeat;
     /* background-image: url(/images/slide_bg_circle.png); */
     content: "";
     z-index: -1;
     opacity: 0.5;
-	}
+  }
   .text-100 {
     font-size: 100px;
   }
@@ -98,14 +110,14 @@ html {
     line-height: 80%;
   }
   .minimal-btn {
-  	color: #211e3b;
+    color: #211e3b;
     border: 1px solid #b0cff2;
     background: transparent;
     -webkit-box-shadow: inherit;
     box-shadow: inherit;
   }
   .nav-item {
-    @apply bg-gray-200 w-full pt-2 pb-2 pl-2 hover:bg-gray-400 active:bg-gray-300
+    @apply w-full bg-gray-200 pb-2 pl-2 pt-2 hover:bg-gray-400 active:bg-gray-300;
   }
   .box-shadow {
     box-shadow: 0px 30px 60px 0px rgba(200, 226, 255, 0.45);
@@ -114,12 +126,12 @@ html {
     box-shadow: inset 0px -2px 10px 0px rgba(200, 226, 255, 0.45);
   }
   .team {
-    transition: transform .8s; /* Animation */
-    cursor: pointer
+    transition: transform 0.8s; /* Animation */
+    cursor: pointer;
   }
 
-  .team:hover{
-    transform: scale(0.95); 
+  .team:hover {
+    transform: scale(0.95);
   }
 
   .service-canvas {
@@ -138,7 +150,7 @@ html {
     -webkit-animation-fill-mode: forwards;
     animation-delay: 0.25s;
   }
-  
+
   .fade-out-2 {
     opacity: 0;
     animation: fadeOut 1s;
@@ -159,7 +171,7 @@ html {
     -webkit-animation-fill-mode: forwards;
     animation-delay: 1s;
   }
-  
+
   .fade-out-5 {
     opacity: 0;
     animation: fadeOut 1s;
@@ -180,7 +192,7 @@ html {
     -webkit-animation-fill-mode: forwards;
     animation-delay: 1.75s;
   }
-  
+
   .fade-out-8 {
     opacity: 0;
     animation: fadeOut 1s;
@@ -193,7 +205,7 @@ html {
     -webkit-animation-fill-mode: forwards;
     animation-delay: 2.25s;
   }
-  
+
   .fade-out-10 {
     opacity: 0;
     animation: fadeOut 1s;
@@ -206,10 +218,22 @@ html {
   }
 
   @keyframes turn {
-    0%   {color:white; opacity: 0;}
-    25%  {color:white; opacity: 1;}
-    75%  {color:white; opacity: 1;}
-    100% {color:#FF8A00; opacity: 1;}
+    0% {
+      color: white;
+      opacity: 0;
+    }
+    25% {
+      color: white;
+      opacity: 1;
+    }
+    75% {
+      color: white;
+      opacity: 1;
+    }
+    100% {
+      color: #ff8a00;
+      opacity: 1;
+    }
   }
 
   @keyframes fadeOut {
@@ -221,7 +245,6 @@ html {
     }
   }
 
-
   .nova {
     position: absolute;
     top: 0;
@@ -231,5 +254,4 @@ html {
     z-index: -10;
     overflow: hidden;
   }
-  
 }
