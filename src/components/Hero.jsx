@@ -9,7 +9,7 @@ const Hero = () => {
         <Nova />
       </div>
       <div
-        className="hero flex h-screen flex-col justify-center lg:mr-44"
+        className="hero flex h-screen flex-col justify-center p-10 lg:mr-44"
         data-aos="zoom-in"
         data-aos-delay="200"
       >

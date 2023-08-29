@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="absolute left-0 top-0 z-[2] h-[100px] w-full">
+    <div className="absolute left-0 top-0 z-[2] h-[100px] w-full px-10">
       <div className="container flex items-center justify-between">
         <div className="flex flex-row items-center justify-center">
           <div className="">
